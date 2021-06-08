@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | [Blogr]</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="container">
+        <div class="primary-header__inner">
+          <div class="primary-header__logo">
+            <img src="./images/logo.svg" alt="website logo" class="logo" />
+          </div>
+
+          <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+              <span class="navigation__icon">&nbsp;</span>
+            </label>
+            
+            <nav class="navigation-nav">
+              <ul class="navigation-nav__list flow-content">
+                <li class="navigation-nav__item navigation-nav__item--1">
+                  <a class="navigation-nav__link" href="#">Product
+                    <img class="icon" src="./images/icon-arrow-light.svg" alt="" />
+                  </a>
+  
+                  <ul class="flow-content sub-menu sub-menu--1 l-space">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Newletter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                  </ul>
+                </li>
+                <li class="navigation-nav__item navigation-nav__item--2">
+                  <a class="navigation-nav__link" href="#">Company
+                    <img class="icon" src="./images/icon-arrow-light.svg" alt="" />
+                  </a>
+  
+                  <ul class="flow-content sub-menu sub-menu--2 l-space">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Newletter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                  </ul>
+                </li>
+                <li class="navigation-nav__item navigation-nav__item--3">
+                    <a class="navigation-nav__link" href="#">Connect
+                    <img class="icon" src="./images/icon-arrow-light.svg" alt="" />
+                    </a>
+  
+                  <ul class="flow-content sub-menu sub-menu--3 l-space">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Newletter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                  </ul>
+                </li>
+              </ul>
+              
+              <div class="right-side">
+                <ul class="right-side__user flow-content">
+                  <li><a href="#">Login</a></li>
+                  <li class="l-space"><a href="#" class="btn btn--bg">Sign Up</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div class="hero__image">
+        <img src="./images/bg-pattern-intro.svg" alt="">
+      </div>
+      <div class="content flow-content">
+        <header>
+          <h1 class="hero-title">A modern publishing platform</h1>
+          <p class="hero-subtitle m-space">
+            Grow your audience and build your online brand
+          </p>
+        </header>
+
+        <div class="buttons">
+          <button class="btn">Start for Free</button>
+          <button class="btn btn--bg">Learn More</button>
+        </div>
+      </div>
+    </div>
+    
+    <main>
+      <section class="future">
+        <div class="container">
+          <header>
+            <h2 class="header-title">Designed for the future</h2>
+          </header>
+          <div class="split future__main xl-space">
+            <div class="future__image">
+              <picture class="future__image-multiple">
+                <source
+                  srcset="./images/illustration-editor-desktop.svg"
+                  media="(min-width: 45em)"
+                  src="./images/illustration-editor-desktop.svg"
+                />
+                <img src="./images/illustration-editor-mobile.svg" alt="" />
+              </picture>
+            </div>
+            <div class="future__content">
+              <div class="flow-content">
+                <h3 class="xl-space section-title">Introducing an extensible editor</h3>
+                <p>
+                  Blogr features an exceedingly intuitive interface which lets
+                  you focus on one thing: creating content. The editor supports
+                  management of multiple blogs and allows easy manipulation of
+                  embeds such as images, videos, and Markdown. Extensibility
+                  with plugins and themes provide easy ways to add functionality
+                  or change the looks of a blog.
+                </p>
+              </div>
+              <div class="flow-content xl-space">
+                <h3 class="section-title">Robust content management</h3>
+                <p>
+                  Flexible content management enables users to easily move
+                  through posts. Increase the usability of your blog by adding
+                  customized categories, sections, format, or flow. With this
+                  functionality, you’re in full control.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="infrastructure">
+        <div class="infrastructure__bg">
+          <div class="container">
+            <img
+              class="infrastructure__circle-img"
+              src="./images/bg-pattern-circles.svg"
+            />
+          </div>
+        </div>
+        <div class="container">
+          <div class="split">
+            <div class="infrastructure__mobile-img">
+              <img src="./images/illustration-phones.svg" alt="" />
+            </div>
+            <div class="flow-content">
+              <h3 class="section-title">State of the Art Infrastructure</h3>
+              <p>
+                With reliability and speed in mind, worldwide data centers
+                provide the backbone for ultra-fast connectivity. This ensures
+                your site will load instantly, no matter where your readers are,
+                keeping your site competitive.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container content">
+          <div class="split flow-content">
+            <div class="features__image">
+              <picture class="features__image-multiple">
+                <source
+                  srcset="./images/illustration-laptop-desktop.svg"
+                  media="(min-width: 45em)"
+                  src="./images/illustration-laptop-desktop.svg"
+                />
+                <img src="./images/illustration-laptop-mobile.svg" alt="" />
+              </picture>
+            </div>
+            <div class="features__content">
+              <div class="flow-content xl-space">
+                <h3 class="section-title">Free, open, simple</h3>
+                <p>
+                  Blogr is a free and open source application backed by a large
+                  community of helpful developers. It supports features such as
+                  code syntax highlighting, RSS feeds, social media integration,
+                  third-party commenting tools, and works seamlessly with Google
+                  Analytics. The architecture is clean and is relatively easy to
+                  learn.
+                </p>
+              </div>
+              <div class="flow-content xl-space">
+                <h3 class="section-title">Powerful tooling</h3>
+                <p>
+                  Batteries included. We built a simple and straightforward CLI
+                  tool that makes customization and deployment a breeze, but
+                  capable of producing even the most complicated sites.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="primary__footer bg-dark">
+      <div class="content container">
+        <div class="split">
+          <div class="footer__logo">
+            <img src="./images/logo.svg" alt="" />
+          </div>
+          <dl class="flow-content xl-space">
+            <dt class="footer-title">Product</dt>
+            <dd class="l-space"><a href="#">Overview</a></dd>
+            <dd><a href="#">Pricing</a></dd>
+            <dd><a href="#">Marketplace</a></dd>
+            <dd><a href="#">Features</a></dd>
+            <dd><a href="#">Integrations</a></dd>
+          </dl>
+          <dl class="flow-content l-space">
+            <dt class="footer-title">Company</dt>
+            <dd class="l-space"><a href="#">About</a></dd>
+            <dd><a href="#">Team</a></dd>
+            <dd><a href="#">Blog</a></dd>
+            <dd><a href="#">Careers</a></dd>
+          </dl>
+          <dl class="flow-content l-space">
+            <dt class="footer-title">Connect</dt>
+            <dd class="l-space"><a href="#">Contact</a></dd>
+            <dd><a href="#">Newsletter</a></dd>
+            <dd><a href="#">LinkedIn</a></dd>
+          </dl>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
